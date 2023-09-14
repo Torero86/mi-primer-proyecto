@@ -1,3 +1,5 @@
+import ContadorApp from './components/Counter'
+import Navegacion from './components/Navegacion'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -11,7 +13,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Navegacion/>
       <body className={inter.className}>{children}</body>
+      <ContadorApp/>
     </html>
   )
 }
